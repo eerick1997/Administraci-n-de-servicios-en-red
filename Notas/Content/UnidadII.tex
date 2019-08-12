@@ -18,3 +18,61 @@ La Organización de Estándares INternacionales creó una comisión para crear u
 
 Surge como un modelo que involucra tanto la PC como la red, buscando una coordinación e integración entre si aún que se traten de modleos distintos.
 
+\subsubsection{Modelo de administración de redes OSI (OSI-NMM)}
+Es un modelo estándar que proporciona el marco conceptual para la organización de una amplia gama de recursos de la red.\\\\
+Planificación de la capacidad de red\\\\
+Gestión del rendimiento de la red\\
+
+Comprende la administración de sistemas que delimita la operación de cualquiera de las 7 capas del modelo OSI, y la administración de los objetos gestionados,
+Plantea los modelos de:
+\begin{itemize}
+    \item Organización
+    \item Información
+    \item Comunicación
+    \item Función
+\end{itemize}
+
+\subsubsection{Modelo organizacional}
+Describe lso componentes de la administración de redes tales como administrador, agente y otros, y sus interrelaciones.
+Sus relaciones vienen dadas por la arquitectura de red.\\\\
+El modelo organizacional del modelo OSI define los bloques y la relación entre estos.\\\\
+
+Es una estructura dividida en dominios de red, los cuales comprenden su operabilidad y ofrece soporte de los aspectos de gestión del mismo.\\\\
+Define conceptos para una gestión cooperativa, como para una gestión basada en jerarquías:
+\begin{itemize}
+    \item COncepto simétrico - entre dominios
+    \item Concepto asimétrico - entre dominios y subdominios
+\end{itemize}
+
+\paragraph{Dominio ejemplo}
+www.ipn.mx \\
+\textbf{www.escom.ipn.mx}\\
+\textbf{www.saes.escom.ipn.mx}
+Dónde el tercer y segundo ejemplo son subdiminios del primero 
+\subsubsection{Gestión de dominios}
+Define la división de entorno, teniendo en cuenta dos moibos principales:
+\begin{itemize}
+    \item {Políticas funcionales, donde se incluyen políticas de seguridad contabilidad etc}
+    \item {Políticas no funcionales, como la gestión geográfica, tecnologías, etc}
+\end{itemize}
+\subsubsection{Sub modelo informativo}
+Trata de la estructura y almacenamiento de la información relativa a la administración de la red \\\\
+Esta información se guarda en una base de datos la cual recube nombre de base de datos de información de administración \textbf{(MIB)} Es un archivo que guarda información sobre nuestras redes, el cual se encuentra en todas las capas de administración.
+\subsubsection{Sub modelo conunicacional}
+Habla de la forma como se comunican los datos de administración en el proceso gestir-agente\\\\
+Atiende lo relacionado con el protocolo de transporte, el protocolo de aplicaciones y los comandos y respuestas entre pares. (Como me comunico, como lo hago, formato de mis tramas, que protocolos usaré, etc.)
+
+\subsubsection{Modelo funcional}
+Divide la complejidad de la administración en áreas funcionales de administración e intenta especificar funciones de administración genéricas.\\\\
+EL modelo funcional proporciona las bases para construir librerías y soluciones.\\\\
+áreas de administración del modelo OSI
+\begin{itemize}
+    \item {Administración de fallas (fault management)}
+    \item {Administracion de configuración (configuration management)}
+    \item {Administración de estadísticas y contabilidad (accounting amanager) [Comportamiento de la red y si todo está dentro de los rangos permitidos, además de saber cuanto se va a cobrar]}
+    \item {Administración de desempeño (performance management) [Que todo este funcionando bien, saber si es posible hacer mejoras, etc.]}
+    \item {Administración de seguridad (security management) [Quién tiene acceso a que si quien trata de accesar tiene permisos, etc]}
+\end{itemize}
+
+\subsection{CMIS (Servicios de interopabilidad de gestión de contenidos)}
+Es un estándar, solo sabemos que cosas debe hacer.

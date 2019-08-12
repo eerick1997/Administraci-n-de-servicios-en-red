@@ -365,6 +365,12 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
 INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/Content/Repaso.tex
 INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/Content/Repaso.tex
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8c.vf
+INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/Content/UnidadII.tex
+INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/Content/UnidadII.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/main.aux
 INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/main.out
 INPUT /home/erick/Documentos/GitHub/RedesIII/Notas/main.out
