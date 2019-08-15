@@ -230,7 +230,7 @@ Podemos tener del 0 - 15 modelos de dispositivo, en los dispositivos CISCO hay 0
     \item {2. Cuantas direcciones IP requiero para una comunicación troncal? Requiero dos, pero también la IP y dirección de broadcast, además la máscara es decir 10.10.0.0/30, }
 \end{itemize}
 Configuramos Router 1 abriendo consola:
-\begin{itemize}
+\begin{lstlisting}
     R1#disable
     R1>enable 
     R1# ?               //Comandos a ejecutar
@@ -250,14 +250,14 @@ Configuramos Router 1 abriendo consola:
     R1(config-if)#no shut 
     R1(config-if)#exit
     R1(config)#
-\end{itemize}
+\end{lstlisting}
 
 Virtual PC
-\begin{itemize}
+\begin{lstlisting}
     PC-1> ip ? // que podemos hacer 
     PC-1> ip address ip 192.168.0.2 24 192.168.0.1
     PC-1> ping 192.168.0.1
-\end{itemize}
+\end{lstlisting}
 
 \begin{lstlisting}
     R1#show ip address brief
@@ -266,3 +266,4 @@ Virtual PC
 \begin{lstlisting}
     R1#show ip route    //Tabla de enrutamiento (Hasta a donde llega mi router)
 \end{lstlisting}
+
