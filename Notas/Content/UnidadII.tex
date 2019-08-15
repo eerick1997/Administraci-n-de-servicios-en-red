@@ -89,4 +89,180 @@ Es un estándar, solo sabemos que cosas debe hacer. CMIS permite la interoperabi
     ip address
     ip address 192.268.0.1 255.255.255.128
     no shutdown
+    e
+    exit
+    inte e 0/1
+    ip address  
+\end{lstlisting}
+
+\section{CMIS (Servicio de interoperabilidad de gestión de contenidos)}
+Surge como un impulso de varias instituciones privadas.\\\\
+
+Estandar abierto de OASIS diseñado para la interoprabilidad de lso sistemas de gestión de contenidos a través d einternet\\
+
+A través d euna capa de abstración permite la gestión de contenidos.\\\\
+
+\subsection{Sistema de gestión de contenidos o CMS}
+Podemos hacer una analogía con el periódico, antes si se compraba un periódico a cualquier hora del día tenías la misma información, hoy en día tienes información en tiempo real, además de tener aglomeradas varias fuentes. CMS funciona de esta manera, un manejo dinámico de la información.\\
+
+Aplicación que explota un entorno de trabajo para la creación y administración de contenidos.
+
+Se usa intensamente en páginas web.
+
+Usa una o varias bases de datos para alojar el contenido del sitio web.
+
+Permite manejar de forma independiente el contenido y el diseño.
+
+\subsection{Objetivos}
+
+CMIS fué diseñado para majorar los sitemas de administración de contenido empresarial que existen junto con sus interfaces de aplicación actual junto con una capa de abstracción que nos permite homogeneizar la información.
+
+\subsection{Historia}
+EMC, IBM y Microsoft propusieron este formato.
+
+Las tres empresas enviaron de forma conjunta CMIS a OASIS. Esta propuesta fue aprobada en 2010 y tuvo una actualizació en 2012. 
+
+\subsection{Definiciones}
+\begin{itemize}
+    \item Modelo de dominio
+    \item Enlaces de servicios web
+    \item Rest ful y AtomPub: Difusión web usando XML y un protocolo simple basado en HTTP
+\end{itemize}
+
+\subsection{ Enfoque de CMIS }
+CMIS se enfoca en las capacidades de contenido básico d eun sistema de administración de contenido empresarial, las cuales son la \textbf{creación, lectura, escritura, borrar y funciones de petición} todo se maneja jerarquicamente como un árbol. 
+
+\subsection{Alcances CMIS}
+CMIS incorpora conceptos contemporáneos de una orientación de servicios web y especificaciones ambas basadas en SOAP y REST (Estos últimos nos permiten tener una interoperabilidad entre objetos). 
+
+\subsection{CMIS}
+Los trabajadores pueden usar una única aplicación para acceder e intercambiar contenido que esta almacenado en varios sistemas de gestión empresarial sin importar que sean diferentes las computadoras.
+
+\subsubsection{Otros estándares}
+\begin{itemize}
+    \item JCR Java Content Repository (Bastante complicado de utilizar)
+    \item WebDAV (Muy jóven)
+\end{itemize}
+
+\subsection{Funciones genéricas de CMIS}
+Crear, acceder a versiones de documentos y crear, leer actualizar, relacionar y borrar obketos
+
+\subsection{Object identity ODI}
+En el momento que se crea un objeto se crea un OID el cual es intransfereible (como una primary key de un objeto).
+
+\subsubsection{Jerarquía de documentos}
+Se usan folders y usa unaestructura de árbol normal, se manejan archivos completos y sin flujo de contenidos
+'\subsection{CRUD}
+\begin{itemize}
+    \item Creación
+    \item Recuperación
+    \item Actualización
+    \item Eliminación
+\end{itemize}
+
+\section{CMIP}
+CMIS es un protocolo!, no nos dice como hacer las cosas solo como deben hacerse las cosas.  Desarrollado por la ISO, ofrece un mecanismo de transporte en la forma de servicio pregunta-respuesta para las 7 capas del modelo OSI. Imaginemos que tenemos una PC que ejecuta un software de administración de servicios y diversos dispositivos de red (Switch, routers, PC, etc) en cada uno de esos dispositios está en ejecución un pequeño programa llamado agente, mientras que en en la PC que tiene el software de administración de servicios tenemos el gestor. El gestor usando pull-in hace preguntas a los agentes (Dame información en el MIB (Base de Información de Administración), el agente responde). El recaba información, realiza estadisticas etc. Posteriormente el gestor envia una respuesta con el fin de ajustar algo en los agentes. Finalmente los dispositivos de red responden si se ha hecho lo que el gestor ha pedido.\\\\
+
+Es considerada como parte d euna arquitectura de administración de red, que provee mecanismos de intercambio de información, entre un administrador y elementos remotos de red, cuyo funcionamiento está basado en los servicios CMIP.\\\\
+
+Los sistemas de administración de red, basados en CMIP son utilizados en la administración de:
+
+\begin{itemize}
+    \item Redes de área local, LAN.
+    \item Redes corporativas y provadas de área amplia.
+    \item Redes nacionales e internacionales.
+\end{itemize}
+
+Define la información en términos de objetos administrados.
+
+Permite su modificación y acciones sobre archivos
+
+\subsection{Sistemas de administración de red o NMS}
+Es un conjunto de aplicaciones que supervisan y controlan los dispositivos administrados.
+
+Proporcionan el volumen de recursos de procesamiento y memoria requeridos para la administración de la red.
+
+Uno o más NMS deben existir en cualquier red.
+
+\subsection{Unidad de datos de protocolo de aplicación}
+Las tramas que utiliza CMIP para su funcionamiento
+
+\subsection{Caracteristicas del protocolo}
+\begin{itemize}
+    \item Ocupa muchos recursos
+    \item Tramas muy grandes
+    \item Peticiones muy complicadas de realizar
+\end{itemize}
+
+\subsection{Protocolos del CMIP}
+ACSE, ROSE, CMISE
+
+\chapter{Configuración básica de R1 y Routers}
+\section{Conexiones a la interfaz de comandos}
+\begin{itemize}
+    \item {Terminal de consola: podemos hacerlo de forma local}
+    \item {Telnet/SSH: nuestro propia red de internet (La primera es sin protección la otra de forma segura)}
+\end{itemize}
+\section{Acceso a la interfaz de comando CLI.}
+Interfaz de Línea de Comandos. Requerimos cuenta de usuario. La consola muestra algo más o menos así.
+
+\begin{lstlisting}
+    dispositivo:ruta>comando                \\Switch
+    dispositivo:ruta#comando                \\Router
+    dispositivo:ruta(enable)#comando      
+    dispositivo:ruta(config)a#comando
+    dispositivo:ruta(config-vlan)#comando
+    dispositivo:ruta(config-it)#comando
+\end{lstlisting}
+Si en el prompt tenemos el símbolo $>$ estamos en modo switch y en modo router tenemos otro símbolo el cual provee más permisos, tenemos modo de privilegio y finalmente configuración específica.\\\\
+
+Podemos tener del 0 - 15 modelos de dispositivo, en los dispositivos CISCO hay 0, 1 y 15. Podemos definir el medio y asignar diverss permisos o comandos de ejecucion generando nuevos grupos.
+
+\subsection{Modos de acceso}
+\begin{itemize}
+    \item {Solo lectura: show}
+    \item {Lectura-escritura: set show}
+\end{itemize}
+
+\subsection{USAMOS GNS3}
+\begin{itemize}
+    \item {1. crear proyecto nuevo}
+    \item {2. Cuantas direcciones IP requiero para una comunicación troncal? Requiero dos, pero también la IP y dirección de broadcast, además la máscara es decir 10.10.0.0/30, }
+\end{itemize}
+Configuramos Router 1 abriendo consola:
+\begin{itemize}
+    R1#disable
+    R1>enable 
+    R1# ?               //Comandos a ejecutar
+    R1# c?              //Comandos que inician con c
+    R1# configure?      //'comandos' del comando
+    R1# conf terminal          //configurar terminal 
+    R1(config)#interface et
+    R1(config)#interface ethernet 0/1
+    R1(config-if)#ip a
+    R1(config-if)#ip add
+    R1(config-if)#ip address 192.168.0.1 255.255.255.0
+    R1(config-if)#no shutdown
+    R1(config-if)#exit 
+    R1(config)# inter e0/0      //Segundo router
+    R1(config-if)#ip add 
+    R1(config-if)#ip address 10.10.0.0 255.255.255.252
+    R1(config-if)#no shut 
+    R1(config-if)#exit
+    R1(config)#
+\end{itemize}
+
+Virtual PC
+\begin{itemize}
+    PC-1> ip ? // que podemos hacer 
+    PC-1> ip address ip 192.168.0.2 24 192.168.0.1
+    PC-1> ping 192.168.0.1
+\end{itemize}
+
+\begin{lstlisting}
+    R1#show ip address brief
+\end{lstlisting}
+
+\begin{lstlisting}
+    R1#show ip route    //Tabla de enrutamiento (Hasta a donde llega mi router)
 \end{lstlisting}
