@@ -267,3 +267,144 @@ Virtual PC
     R1#show ip route    //Tabla de enrutamiento (Hasta a donde llega mi router)
 \end{lstlisting}
 
+Algunos comandos simples
+\begin{lstlisting}
+    R1#conf t
+    R1(config)#prompt "Curso4CM1"
+\end{lstlisting}
+\begin{lstlisting}
+    R1#conf t 
+    R1(config)#host name "Curso4CM1"
+    Curso4CM1#
+\end{lstlisting}
+Usando password
+\begin{lstlisting}
+    R1#conf t
+    R1(config)#enable password 1234
+    R1(config)#end 
+    R1#disable 
+    R1>enable //Ahora pedirá password
+\end{lstlisting}
+
+\begin{lstlisting}
+    R1#show running-config //Configuración y comandos que debo ejecutar
+\end{lstlisting}
+
+\begin{lstlisting}
+    R1#show running-config | include pass //Mostrar el password
+\end{lstlisting}
+
+Contraseña segura
+\begin{lstlisting}
+    R1#conf t
+    R1(config)#enable secret 12345678
+    R1#end 
+    R1#show running-config | include enable
+\end{lstlisting}
+
+Activar el servicio de encriptación
+\begin{lstlisting}
+    R1#conf t
+    R1(config)#service password-encryption
+    R1(config)#exit
+    R1#show running-config | include pass
+\end{lstlisting}
+
+Ya hemos crado un password, el cual tiene como fin el cambio de privilegios, pordemos también poner un password para abrir la consola.
+\begin{lstlisting}
+    R1#conf t
+    R1(config)#line console 0
+    R1(config-line)#password 1234
+    R1(config-line)#login 
+    R1(config-line)#exit 
+    R1(config)#exit
+    R1#disable 
+    R1enable //Pedirá password 
+\end{lstlisting}
+
+Quiero conexión remota de R2 a R1\\
+Puerto telnet = 22, requerimos un password.
+\begin{lstlisting}
+    R2#telnet 10.10.0.1 //Requiere password y no la tenemos, entonces debemos configurar primero a donde nos vamos a conectar (añadir password a R1)
+\end{lstlisting}
+
+Configuramos password para telnet
+\begin{lstlisting}
+    R1#conf t
+    R1(config)#line vty 0 15 //Accesos completos, cisco usa permisos de seguridad de 0 a 15 pero solo tenemos acceso a 3 
+    R1(config)#password 1234
+\end{lstlisting}
+
+Intentamos de nuevo con R2 conectarnos
+\begin{lstlisting}
+    R2#telnet 10.10.0.1 //Ahora nos pedirá password, para nuestro caso es 1234, ahora estamos en R1
+    R1
+\end{lstlisting}
+
+Configuración de SSL: tiene mayor nivel de seguridad. Podemos encriptar las tramas
+\begin{lstlisting}
+    R1disable
+    R1show ssh //Esta desactivado
+\end{lstlisting}
+
+Asignando llave y dominio 
+\begin{lstlisting}
+    R1enable
+    R1#conf t
+    R1(config)#ip domain-name curso4CM1.com//Configuramos el dominio, este tiene relación lógica o práctica algo que nos vuelve comunes.
+    R1(config)#crypto key generate rsa general-keys //Definimos una llave de encriptación
+    How many bits in the modulus [512]: 1024 //Asignamos el tamaño de llave en este caso 1024 bytes
+\end{lstlisting}
+
+Tiempo de inactividad, se cae la conexión en n segundos 
+\begin{lstlisting}
+    R1(config)#ip ssh time-out 30 //En 30 segundos se cancela la conexión
+\end{lstlisting}
+
+Número de intentos si falla el password 
+\begin{lstlisting}
+    R1(config)#ip ssh authentication-retries 3 //A los 3 intentos se cancela la conexión 
+\end{lstlisting}
+
+Configuración versión de ssh 
+\begin{lstlisting}
+    R1(config)#ip ssh version 2
+\end{lstlisting}
+
+Privilegios 
+\begin{lstlisting}
+    R1(config)#username admin privilege 15 pass 1234 //Asignamos un nivel de privilegios 15 con el password 1234
+\end{lstlisting}
+
+\begin{lstlisting}
+    R1(config)#line vty 0 4 //Modo de configuración de una terminal virtual (remota)
+    R1(config-line)#transport input ssh //Me comunicaré usando SSH
+    R1(config-line)#login local //Desde dónde haré la verificación de password, imaginemos que tenemos un server que tiene los controles de acceso. En este caso todo se hará localmente
+\end{lstlisting}
+
+Verificamos usando R2 que todo esté bien 
+\begin{lstlisting}
+    R2#ssh -v 2 -l admin 10.10.0.1 //En mi caso no pude especificar la versión por tanto removemos ese comando
+    R2#ssh -l admin 10.10.0.1 //Me pedirá el password el cual es 1234 y ahora puedo acceder remotamente a R1
+\end{lstlisting}
+Verificamos si esta activo el SSH 
+\begin{lstlisting}
+    R1(config)#end 
+    R1show ssh
+\end{lstlisting}
+
+Niveles de privilegio 
+\begin{lstlisting}
+    R1conf t
+    R1(config)#privilege line//Definimos el conjunto de comando a asignar
+\end{lstlisting}
+
+\section{Enrutamiento estático y dinámico}
+Estas tienen una diferencia: Recordemos en el ejemplo anterior hacíamos ping a R2 pero no teníamos respuesta. En enrutamiento dinámico cada router sabe que va ha hacer, si envian una petición sabe por que interfaz enviar una respuesta.\\
+Nosotros como adminsitradores definimos un registro en la tabla de enrutamiento.
+
+\begin{lstlisting}
+    R1show ip route //Vemos tablas de enrutamiento del router  
+\end{lstlisting}
+
+Si el paquete no está en alguno de los renglones de la tabla de enrutamiento no envia nada el router.
