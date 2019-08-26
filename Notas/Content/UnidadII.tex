@@ -407,4 +407,423 @@ Nosotros como adminsitradores definimos un registro en la tabla de enrutamiento.
     R1show ip route //Vemos tablas de enrutamiento del router  
 \end{lstlisting}
 
-Si el paquete no está en alguno de los renglones de la tabla de enrutamiento no envia nada el router.
+Si el paquete no está en alguno de los renglones de la tabla de enrutamiento no envia nada el router.       
+
+\section{Protocolos CMIP}
+
+\begin{itemize}
+    \item {ACSE: Se encarga de establecer las conexiones entre gestor y agente.}
+    \item {ROSE: Se encarga de generar la transferencia de datos entre gestor y agente.}
+    \item {CMISE: Utiliza los protocolos anteriores para administrar la red, etc. Entre los agentes.}
+\end{itemize}
+
+\chapter{Enrutamiento estático y dinámico}
+
+\section{Enrutamiento estático}
+Es la forma más simple de enrutamiento, en la que las tareas de descubrimiento de rutas y su propagación en la red son realizadas manualmente por el administrador de la internetwork. (El administrador añade una dirección)
+
+En un esquema de enrutamiento estático una vez que la ruta es configurada, no hay necesidad de que los routers intenten descubrimientos de rutas para comunicar entre si información acerca de las mismas.
+\begin{itemize}
+    \item {La distancia administativa predeterminada de una ruta estática es 1}
+    \item {Las rutas estáticas serán incluidas en la tabla de ruteo a menos que la red esté dieractamente conectada, o que la interfaz de salida especificada no pueda ser alcanzada por el router}
+\end{itemize}
+
+Supongamos que tenemos configurados varios protocolos, el router le da prioridad a un protocolo sobre otro, esto es la distancia administrativa.
+
+\section{Enrutamiento dinámico}
+EN el enrutamiento dinámico, la determinación de una ruta se hace usando información que es obtenida de los protocolos de enrutamiento.
+
+Esta información se genera en respuesta a cambios en la red.
+
+\subsection{Ventajas del enrutamiento estático}
+\begin{itemize}
+    \item {Eficiencia de recursos: no consume ancho de banda para intercambio y descubrimiento de rutas, no ocupa procesamiento del CPU en cálculo de rutas y requiere menos memoria}
+    \item {Mayor segurodad}
+    \item {Control sobre el tráfico}
+    \item {Respaldo sobre rutas dinámicas: puede configurarse una ruta estática con una distancia administrativa mayor a la ruta obtenida por un protocolo a un mismo destino, en caso de que el protocolo falle se añade una ruta estática.}
+\end{itemize}
+
+\subsection{Desventajas del enrutamiento estático}
+\begin{itemize}
+    \item {No se adapta a cambios a al topología}
+    \item {Costo de administración}
+    \item {No ofrece gran escalabilidad}
+\end{itemize}
+
+\subsection{Ventajas enrutamiento dinámico}
+\begin{itemize}
+    \item Redundancia
+    \item Multiple acceso
+    \item Carga compartida 
+    \item Escalable y flexible
+\end{itemize}
+
+\subsection{Desventaja del enrutamiento dinámico }
+\begin{itemize}
+    \item Procesamiento
+\end{itemize}
+
+\subsection{ENrutamiento estático}
+Se realiza utilizando ip route 
+\begin{lstlisting}
+    ip route prefijo máscara {dir-reencio | vlan vlan-id}[distancia][permanente][tag valor]
+\end{lstlisting}
+
+\begin{itemize}
+    \item prefijo: identificador de red 
+    \item máscara: máscara de la subred 
+    \item dir-reenvio | vlan vlan-id: a dónde se dará un ''brinco''
+    \item distancia (opcional): especifica la métrica de la distancia para esta ruta, los valores son válidos entre 1 y 255. Las rutas con valores pequeños son las preferidas
+    \item Permanente (opcional). Especifica una ruta permanente
+    \item tag (opcional): especifica una etiqueta para la ruta con valores válidos entre 1 a 4294967295
+\end{itemize}
+
+\section{Protocolos}
+Hay dos tipos de protocolos, los protocolos enrutables y los de enrutamiento
+\subsection{Protocolos enrutables}
+Tienen una dirección que deja moverse.
+\begin{enumerate}
+    \item IP 
+    \item IPX 
+    \item AppleTalk
+\end{enumerate}
+
+\subsection{Protocolos no enrutables}
+Funcianan sobre una sola LAN. 
+\begin{enumerate}
+    \item NetBEUI 
+    \item DLC 
+    \item LAT 
+    \item DRP 
+    \item MOP
+\end{enumerate}
+
+\subsection{Protocolo de enrutamiento }
+Mecanismos necesarios para compartir la información de enrutamiento. Hace que los routers compartan información, para que construyan sus tablas de enrutamientO .
+\begin{enumerate}
+    \item RIP 
+    \item OSPF 
+    \item IGRP
+\end{enumerate}
+
+\subsubsection{Objetivos}
+\begin{enumerate}
+    \item Identificar rutas potenciales 
+    \item Deteterminar rutas óptimas 
+    \item Detectar cualquier cambio en las topologías
+    \item Optimización 
+    \item Simplicidad y bajo gasto
+    \item Solidez y estabilidad 
+    \item Flexibilidad 
+    \item Convergencia rápida: Si existe un cambio en la topología hay un tiempo que se da para notificar a los routers estos cambios y recalcular los algoritmos con los que se construye la tabla de enrutambiento
+\end{enumerate}
+
+
+\begin{itemize}
+    \item Proveen reglas sintácticas y semánticas
+    \item Contienen los detalles del formato de los mensajes 
+    \item Describen intercambio de mensajes 
+    \item Describen los proceso de comunicación 
+\end{itemize}
+
+\section{Distancia administrativa }
+
+Valores predeterminados
+
+\begin{longtable}[c]{|
+    >{\columncolor[HTML]{00009B}}l |l|}
+    \hline
+    {\color[HTML]{FFFFFF} Origen de la ruta}  & \cellcolor[HTML]{00009B}{\color[HTML]{FFFFFF} Valores predeterminados de la distancia} \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    {\color[HTML]{FFFFFF} Interfaz conectada} & {\color[HTML]{000000} 0}                                                               \\ \hline
+    {\color[HTML]{FFFFFF} RUta estática}      & {\color[HTML]{000000} 1}                                                               \\ \hline
+    {\color[HTML]{FFFFFF} Ruta resumen EIGRP} & {\color[HTML]{000000} 5}                                                               \\ \hline
+    {\color[HTML]{FFFFFF} Protocolo BGP}      & {\color[HTML]{000000} 20}                                                              \\ \hline
+    {\color[HTML]{FFFFFF} EIGRP interno}      & {\color[HTML]{000000} 90}                                                              \\ \hline
+    {\color[HTML]{FFFFFF} IGRP}               & {\color[HTML]{000000} 100}                                                             \\ \hline
+    {\color[HTML]{FFFFFF} OSPF}               & {\color[HTML]{000000} 110}                                                             \\ \hline
+    {\color[HTML]{FFFFFF} IS-IS}              & {\color[HTML]{000000} 115}                                                             \\ \hline
+    {\color[HTML]{FFFFFF} RIP}                & {\color[HTML]{000000} 120}                                                             \\ \hline
+    {\color[HTML]{FFFFFF} EIGRP externo}      & {\color[HTML]{000000} 150}                                                             \\ \hline
+    {\color[HTML]{FFFFFF} BGP interno}        & {\color[HTML]{000000} 200}                                                             \\ \hline
+    {\color[HTML]{FFFFFF} Desconocido}        & {\color[HTML]{000000} 255}                                                             \\ \hline
+\end{longtable}
+
+\section{COncepto de métrica y sus componentes}
+\begin{itemize}
+    \item Un algoritmo de enrutamiento debe determinar las ventajas de una ruta sobre otra 
+    \item Para cada ruta a través de la res, un protocolo utiliza valores llamados métricas para determinar cuál es laruta óptima 
+    \item Las métricas pueden tomar como base una sola característica de la ruta, o pueden calcularse tomando en cuenta distancias características 
+    \item Con las métricas, el algoritmo genera un valor llamado valor métrico
+\end{itemize}
+
+\subsection{Metrícas de enrutamiento}
+\begin{enumerate}
+    \item Ancho de banda
+    \item Retardo 
+    \item Carga: permite reajustar las rutas 
+    \item Confiabilidad: índice de error 
+    \item Número de saltos 
+    \item Tictacs 
+    \item Costo 
+\end{enumerate}
+
+\subsection{Clases de protocolos de enrutamiento}
+\begin{itemize}
+    \item Protocolos de enrutamiento Interior (IGPs)
+    \item Protocolos de enrutamiento exterior (EGPS)
+\end{itemize}
+
+Cuando nos referimos a interno y externo hablamos de dominios 
+
+EL método en que descubren y calculan rutas 
+\begin{itemize}
+    \item Protocolos vector-distancia 
+    \item Protocolo de estado de enlace 
+    \item Protocolos híbridos balanceados 
+\end{itemize}
+
+DIreccionamiento IP 
+\begin{itemize}
+    \item Protocolos classful 
+    \item Protocolos classless
+\end{itemize}
+
+\subsubsection{Convergencia}
+Si es menor el tiempo de convergencia es mejor. 
+
+\section{Protocolos classful}
+\begin{itemize}
+    \item {Los protocolos de enrutamiento classfull no incluyen máscara de red en los anuncios de red}
+    \item {Dentro de la misma red, se asume una consistencia de máscaras de subred}
+\end{itemize}
+
+\section{Protocolos classless}
+Requerimos enviar las máscaras y construye una estructura jerárquica dependiendo de las direcciones IP y las máscaras que se estan utilizando 
+\begin{itemize}
+    \item RIPV2 
+    \item OSPF
+\end{itemize}
+
+\section{Protocolos de enrutamiento interior}
+Se utilizan para intercambias información dentro de un siste aautónomo.
+
+\section{Principales tipos de enrutamiento}
+
+\begin{itemize}
+    \item {Vector-distancia: Determina la dirección a partir de pares, básicamente se tiene un router y ese router tiene el identificador de red y su costo (tabla de enrutamiento)}
+    \item {Estado del enlace: }
+\end{itemize}
+
+\section{Ejemplo de configuración RIPv2}
+
+\subsection{Configuración básica}
+Configurar RIPv1
+\begin{itemize}
+    \item {Activar protocolo RIPv1 \\ router rip}
+    \item {Anunciar redes: \\ network <dirección de red> }
+\end{itemize}
+
+Configurar RIPv2 en R4
+\begin{itemize}
+    \item {Activar el protocolo RIPv2: \\ router rip}
+    \item {Especificar la versión 2: \\ version 2}
+    \item {Anunciar redes: \\ network <dirección de red>}
+\end{itemize}
+
+\begin{lstlisting}
+    Rx#write //Para mantener la configuración de los routers
+\end{lstlisting}
+
+Damos por hecho que las IP
+\begin{lstlisting}
+    R1# conf t
+    R1(config)#router rip 
+    R1(config-router)#version 2
+\end{lstlisting}
+
+
+Recordemos que RIP envia sus tablas de enrutamiento a los routers vecinos. Cada 30s se refresca esta información.   
+
+\begin{lstlisting}
+    R1# conf t
+    R1(configure)# router rip 
+    R1(configure-router)# version 2
+    R1(configure-router)# network 200.1.1.0 //Subred de la computadora
+    R1(configure-router)# network 40.0.0.0  //Subred con los demás routers
+\end{lstlisting}
+
+¿Porqué necesito saber de donde voy y a donde voy? Imaginemos que tenemos una topología con switches o algo intermedio entre routers, debemos saber hacia donde hay que moverse, por esa razón es que rip nos dice a donde vamos a ir.
+
+Rip soporta balanceo de cargas hasta en cinco rutas.
+
+Hay que indicarle a RIP que haga un superneteo de las redes ya que recordemos que RIP es orientado a clases:
+\begin{lstlisting}
+    R3# conf t
+    R3(configure)#router rip
+    R3(configure--router)#no auto-summary 
+\end{lstlisting}
+
+Más comandos para monitorizar 
+\begin{lstlisting}
+    R1#show ip protocols
+\end{lstlisting}
+
+Como evitamos sobrecarga en ciertas interfaces? Debemos indicarselo a rip 
+
+\begin{lstlisting}
+    R3#conf t
+    R3(configure)#router rip 
+    R3(configure-router)#passive-interface ethernet 0/0 //donde tenemos las LAN (las computadoras conectadas)
+\end{lstlisting}
+
+Supongamos que queremos configurar un router como router de frontera en nuestro caso el router R5, como lo configuramos?
+\begin{lstlisting}
+    R5#conf t
+    R5(configure)#router rip 
+    R5(configure-router)#default-information origin
+\end{lstlisting}
+
+Si hacemos show ip route en el router R3 tenemos una red por defecto la que es la 0.0.0.0 (último renglón)\\\\
+
+¿Que pasa si quiero combinar un protocolo dinámico con uno dinámico? Para esto rip va a difundir información que no pertenece al protocolo RIP.
+
+Requerimos informar al router Rf que toda subred que no esté en 200.20.20 y 60.6.6.4 salga por el router R5 ¿Cómo hacemos eso? Hay que definir primero un enrutamiento estático. Que ID de red necesitamos? 0.0.0.0 con la máscara 0.0.0.0 esto para capturar todas las IP que no caigan en las dos subredes que hemos mencionado antes. Nuestro siguiente punto de salto es 60.6.6.5
+\begin{lstlisting}
+    Rf(config)#ip route 0.0.0.0 0.0.0.0 60.6.6.5
+\end{lstlisting}
+
+Nótese que tenemos una prioridad de 1 en este caso. 
+
+Debemos hacer lo mismo con el router R5 en este caso.
+
+\begin{lstlisting}
+    R5(config)#ip route 200.20.20.0 255.255.255.0 60.6.6.6
+\end{lstlisting}
+
+Los demás routers no conocen esta configuración así que este router debe de informar al resto de routers
+
+\begin{lstlisting}
+    R5(config)# router rip
+    R5(config)# redistribute static
+\end{lstlisting}
+
+\section{Cuenta a infinito}
+Cuando hablamos de RIP el número máximo de saltos o métrica es 15 si es 16 o mayor el destino es inalcanzable. Por ejemplo si removemos una conexión a una LAN y estamos usando RIP vamos a generar una especie de ciclo hasta que elk valor de los saltos llegue a 16 esto hace que el destino se convierta en inalcanzable.
+
+
+\chapter{Protocolo OSPF}
+\section{Aspecto básico del protocolo OSPF}
+Definido por la IETF en la RFC 2328, de Abril-98.
+\begin{itemize}
+    \item {Se encapsula en IP con rpotocolo 59h}
+    \item {Se define 05 tipos de mensajes}
+    \item {Lectura obligada}
+\end{itemize}
+
+\section{Características}
+\begin{itemize}
+    \item {Se hace uso del protocolo HELLO}
+    \item Se envía periodicamente a la dirección multicast IP 224.0.0.5
+\end{itemize}
+
+Requiere mucha memoria ya que genera una base de datos, requiere mucho ancho de banda, ya que envía la tabla de enrutamiento e información de la BD a los routers vecinos. EN este protocolo como ya se mencionó antes se utilizan 5 tipos de mensajes, dónde el más sencillo es el mensaje ''HELLO''. 
+OSPF hace que los routers conozcan la información de toda la tabla de enrutamiento.
+
+OSPF divide todo el sistema autónomo en áreas, dónde todas las áreas deben estar conectadas al área 0, dónde el área cero es el área de backbone es la columna vertebral de OSPF.
+\subsection{Observaciones al estado de enlace}
+\begin{itemize}
+    \item {Los routers de enlace requieren más memoria y potencia de procsamiento, que un router vector-distancia}
+    \item {Al inicio del proceso se debe inundar la red con mensaje LSA, puede degradar la red}
+    \item {Hay que dividir la red en áreas}
+\end{itemize}
+\subsection{Configuración}
+\begin{lstlisting}
+    Rx#conf t
+    Rx(config)#router ospf process-ID //Debe ser el mismo para todos los routers
+    Rx(config-router)# network dirección_de_red wildcard /*comodín*/ area area_ID
+    Rx(config-router)#exit
+\end{lstlisting}
+El wildcard es el inverso de la máscara por ejemplo si la máscara es 255.255.255.252 el inverso es 0.0.0.3
+
+\section{Wildcard}
+\subsection{Bits de máscara wildcard}
+Una máscara wildcard es un número de 32 bits dividido en cuatro octetos (como IP)\\
+El enmascaramiento wildcard es utilizado por las ACL para identificar una sola dirección o múltiples direcciones para pruebas d epermiso y denegación\\ 
+No guardan relación funcional con las máscaras de subred\\
+ALgunas veces, se refiere a una máscara de wildcard como una máscara inversa.\\\\
+
+Un bit a 0 en la mmáscara significa comprobar el valor correspondiente y un 1 es ignorar el valor correspondiente.\\\\
+Ejemplo: tenemos la dirección \\
+30.15.25.0/26 supongamos que me interesan todas las direcciones IP pares de esta LAN. La máscara es 255.255.255.192\\\\
+
+\begin{longtable}[H]{|l|l|l|l|}
+    \hline
+    \rowcolor[HTML]{FFFFFF} 
+    {\color[HTML]{333333} 255}                  & {\color[HTML]{333333} 255}                  & {\color[HTML]{333333} 255}                 & {\color[HTML]{333333} 192}                      \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    \rowcolor[HTML]{FFFFFF} 
+    {\color[HTML]{333333} 30}                   & {\color[HTML]{333333} 15}                   & {\color[HTML]{333333} 25}                  & {\color[HTML]{333333} 00xxxxxx}                 \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    \multicolumn{4}{|l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} Los primeros 26 bits nos interesan es decir:}}                                                                        \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    {\color[HTML]{333333} 0}                    & {\color[HTML]{333333} 0}                    & {\color[HTML]{333333} 0}                   & {\color[HTML]{333333} 00}                       \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    \multicolumn{4}{|l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} El último bit nos define la paridad por tanto, solo el último bit nos importa saber que valor tiene (debe ser cero)}} \\ \hline
+    0                                           & 0                                           & 0                                          & 0011111110                                      \\ \hline
+    \multicolumn{4}{|l|}{Con lo cual obtenemos nuestro wild card}                                                                                                                            \\ \hline
+    0                                           & 0                                           & 0                                          & 62                                              \\ \hline
+\end{longtable}
+
+Tomemos de nuevo el wildcard 0.0.0.3:
+\begin{longtable}[H]{|
+    >{\columncolor[HTML]{FFFFFF}}l |
+    >{\columncolor[HTML]{FFFFFF}}l |
+    >{\columncolor[HTML]{FFFFFF}}l |
+    >{\columncolor[HTML]{FFFFFF}}l |
+    >{\columncolor[HTML]{FFFFFF}}l |}
+    \hline
+    wildcard:                                  & {\color[HTML]{333333} 0}  & {\color[HTML]{333333} 0} & {\color[HTML]{333333} 0} & {\color[HTML]{333333} 00000011}                                 \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    IDred:                                     & {\color[HTML]{333333} 10} & {\color[HTML]{333333} 2} & {\color[HTML]{333333} 3} & {\color[HTML]{333333} 00000100}                                 \\ \hline
+    \cellcolor[HTML]{FFFFFF}                   & {\color[HTML]{333333} 10} & {\color[HTML]{333333} 2} & {\color[HTML]{333333} 3} & {\color[HTML]{333333} 000001( \{00\}, \{01\}, \{10\}, \{11\} )} \\ \cline{2-5} 
+    \cellcolor[HTML]{FFFFFF}                   & \multicolumn{4}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} Por tanto tenemos redes definidas desde}}                                       \\ \cline{2-5} 
+    \cellcolor[HTML]{FFFFFF}                   & {\color[HTML]{333333} 10} & {\color[HTML]{333333} 2} & {\color[HTML]{333333} 3} & {\color[HTML]{333333} 4}                                        \\ \cline{2-5} 
+    \cellcolor[HTML]{FFFFFF}                   & \multicolumn{4}{l|}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}l@{}}.\\ .\\ .\end{tabular}}                                                    \\ \cline{2-5} 
+    \multirow{-5}{*}{\cellcolor[HTML]{FFFFFF}} & 10                        & 2                        & 3                        & 7                                                               \\ \hline
+\end{longtable}
+
+\section{Aspectos de configuración}
+\begin{itemize}
+    \item {AL iniciarse el proceso OSPF en un router, el IOS utiliza la dirección IP activa local más alta como ID del router}
+    \item {Si no existe una interfaz activa, el proceso OSPF no se iniciará}
+    \item {Para asegurar la estabilidad del proceso OSPF, es necesario que el router tenga una interfaz activa en todo momento}
+    \item {La interfaz loopback es importante para este objetivo}
+\end{itemize}
+
+Supongamos que tenemos las siguientes direcciones IP
+\begin{itemize}
+    \item 20.20.20.1 
+    \item 20.20.30.1
+    \item \textbf{20.20.40.1}
+\end{itemize}
+OSPF va a tomar la dirección IP \textbf{20.20.40.1} ya que es la más alta. Esto vuelve inestable todo OSPF ya que al conectar más redes no obtendremos a veces la dirección IP más alta, si la interfaz con la IP más alta falla nuevamente volvemos OSPF inestable. Es decir OSPF es dependiente de las interfaces con las que se está trabajando. Para solucionar esto utilizamos interfaces loopback.
+Si se tienen varias ip de loopback nuevamente elige la que tenga la IP más alta.\\\\
+
+Ahora debemos de responder lo siguiente ¿Cómo definimos el router designado y el designado de respaldo? Esto se realiza con la prioridad 
+\begin{lstlisting}
+    R(config)#interface serial 0/0/0
+    R(config-if)#ip priority n_prioridad
+\end{lstlisting}
+Un valor de prioridad puede variar de 0 a 255 \\
+
+Valor 0 de prioridad imposibilita al router que sea elegido DR \\
