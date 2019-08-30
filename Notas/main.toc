@@ -1,78 +1,98 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{3}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Temario}{3}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Evaluaci\IeC {\'o}n}{5}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Fechas importantes}{5}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}Reglas}{5}{section.1.4}% 
-\contentsline {section}{\numberline {1.5}Bibliograf\IeC {\'\i }a}{5}{section.1.5}% 
-\contentsline {chapter}{\numberline {2}Direcciones IP}{6}{chapter.2}% 
-\contentsline {chapter}{\numberline {3}Unidad II}{7}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Modelo OSI}{7}{section.3.1}% 
-\contentsline {subsubsection}{Administraci\IeC {\'o}n de sistemas}{7}{section.3.1}% 
-\contentsline {subsubsection}{Modelo de administraci\IeC {\'o}n OSI}{7}{section.3.1}% 
-\contentsline {subsubsection}{Modelo de administraci\IeC {\'o}n de redes OSI (OSI-NMM)}{7}{section.3.1}% 
-\contentsline {subsubsection}{Modelo organizacional}{8}{section.3.1}% 
-\contentsline {paragraph}{Dominio ejemplo}{8}{section.3.1}% 
-\contentsline {subsubsection}{Gesti\IeC {\'o}n de dominios}{8}{section.3.1}% 
-\contentsline {subsubsection}{Sub modelo informativo}{9}{section.3.1}% 
-\contentsline {subsubsection}{Sub modelo conunicacional}{9}{section.3.1}% 
-\contentsline {subsubsection}{Modelo funcional}{9}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}CMIS (Servicios de interopabilidad de gesti\IeC {\'o}n de contenidos)}{9}{subsection.3.1.1}% 
-\contentsline {section}{\numberline {3.2}CMIS (Servicio de interoperabilidad de gesti\IeC {\'o}n de contenidos)}{10}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Sistema de gesti\IeC {\'o}n de contenidos o CMS}{10}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Objetivos}{11}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Historia}{11}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Definiciones}{11}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5} Enfoque de CMIS }{11}{subsection.3.2.5}% 
-\contentsline {subsection}{\numberline {3.2.6}Alcances CMIS}{11}{subsection.3.2.6}% 
-\contentsline {subsection}{\numberline {3.2.7}CMIS}{11}{subsection.3.2.7}% 
-\contentsline {subsubsection}{Otros est\IeC {\'a}ndares}{11}{subsection.3.2.7}% 
-\contentsline {subsection}{\numberline {3.2.8}Funciones gen\IeC {\'e}ricas de CMIS}{12}{subsection.3.2.8}% 
-\contentsline {subsection}{\numberline {3.2.9}Object identity ODI}{12}{subsection.3.2.9}% 
-\contentsline {subsubsection}{Jerarqu\IeC {\'\i }a de documentos}{12}{subsection.3.2.9}% 
-\contentsline {subsection}{\numberline {3.2.10}CRUD}{12}{subsection.3.2.10}% 
-\contentsline {section}{\numberline {3.3}CMIP}{12}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Sistemas de administraci\IeC {\'o}n de red o NMS}{13}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Unidad de datos de protocolo de aplicaci\IeC {\'o}n}{13}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Caracteristicas del protocolo}{13}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}Protocolos del CMIP}{13}{subsection.3.3.4}% 
-\contentsline {chapter}{\numberline {4}Configuraci\IeC {\'o}n b\IeC {\'a}sica de R1 y Routers}{14}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Conexiones a la interfaz de comandos}{14}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Acceso a la interfaz de comando CLI.}{14}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Modos de acceso}{14}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}USAMOS GNS3}{15}{subsection.4.2.2}% 
-\contentsline {section}{\numberline {4.3}Enrutamiento est\IeC {\'a}tico y din\IeC {\'a}mico}{18}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Protocolos CMIP}{18}{section.4.4}% 
-\contentsline {chapter}{\numberline {5}Enrutamiento est\IeC {\'a}tico y din\IeC {\'a}mico}{19}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Enrutamiento est\IeC {\'a}tico}{19}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Enrutamiento din\IeC {\'a}mico}{19}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Ventajas del enrutamiento est\IeC {\'a}tico}{19}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Desventajas del enrutamiento est\IeC {\'a}tico}{20}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Ventajas enrutamiento din\IeC {\'a}mico}{20}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Desventaja del enrutamiento din\IeC {\'a}mico }{20}{subsection.5.2.4}% 
-\contentsline {subsection}{\numberline {5.2.5}ENrutamiento est\IeC {\'a}tico}{20}{subsection.5.2.5}% 
-\contentsline {section}{\numberline {5.3}Protocolos}{21}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Protocolos enrutables}{21}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Protocolos no enrutables}{21}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}Protocolo de enrutamiento }{21}{subsection.5.3.3}% 
-\contentsline {subsubsection}{Objetivos}{21}{Item.65}% 
-\contentsline {section}{\numberline {5.4}Distancia administrativa }{22}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}COncepto de m\IeC {\'e}trica y sus componentes}{22}{section.5.5}% 
-\contentsline {subsection}{\numberline {5.5.1}Metr\IeC {\'\i }cas de enrutamiento}{23}{subsection.5.5.1}% 
-\contentsline {subsection}{\numberline {5.5.2}Clases de protocolos de enrutamiento}{23}{subsection.5.5.2}% 
-\contentsline {subsubsection}{Convergencia}{23}{subsection.5.5.2}% 
-\contentsline {section}{\numberline {5.6}Protocolos classful}{23}{section.5.6}% 
-\contentsline {section}{\numberline {5.7}Protocolos classless}{24}{section.5.7}% 
-\contentsline {section}{\numberline {5.8}Protocolos de enrutamiento interior}{24}{section.5.8}% 
-\contentsline {section}{\numberline {5.9}Principales tipos de enrutamiento}{24}{section.5.9}% 
-\contentsline {section}{\numberline {5.10}Ejemplo de configuraci\IeC {\'o}n RIPv2}{24}{section.5.10}% 
-\contentsline {subsection}{\numberline {5.10.1}Configuraci\IeC {\'o}n b\IeC {\'a}sica}{24}{subsection.5.10.1}% 
-\contentsline {section}{\numberline {5.11}Cuenta a infinito}{26}{section.5.11}% 
-\contentsline {chapter}{\numberline {6}Protocolo OSPF}{27}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Aspecto b\IeC {\'a}sico del protocolo OSPF}{27}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Caracter\IeC {\'\i }sticas}{27}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}Observaciones al estado de enlace}{27}{subsection.6.2.1}% 
-\contentsline {subsection}{\numberline {6.2.2}Configuraci\IeC {\'o}n}{28}{subsection.6.2.2}% 
-\contentsline {section}{\numberline {6.3}Wildcard}{28}{section.6.3}% 
-\contentsline {subsection}{\numberline {6.3.1}Bits de m\IeC {\'a}scara wildcard}{28}{subsection.6.3.1}% 
-\contentsline {section}{\numberline {6.4}Aspectos de configuraci\IeC {\'o}n}{29}{section.6.4}% 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{4}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Temario}{4}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Evaluaci\IeC {\'o}n}{6}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Fechas importantes}{6}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Reglas}{6}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}Bibliograf\IeC {\'\i }a}{6}{section.1.5}% 
+\contentsline {chapter}{\numberline {2}Direcciones IP}{7}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Unidad II}{8}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Modelo OSI}{8}{section.3.1}% 
+\contentsline {subsubsection}{Administraci\IeC {\'o}n de sistemas}{8}{section.3.1}% 
+\contentsline {subsubsection}{Modelo de administraci\IeC {\'o}n OSI}{8}{section.3.1}% 
+\contentsline {subsubsection}{Modelo de administraci\IeC {\'o}n de redes OSI (OSI-NMM)}{8}{section.3.1}% 
+\contentsline {subsubsection}{Modelo organizacional}{9}{section.3.1}% 
+\contentsline {paragraph}{Dominio ejemplo}{9}{section.3.1}% 
+\contentsline {subsubsection}{Gesti\IeC {\'o}n de dominios}{9}{section.3.1}% 
+\contentsline {subsubsection}{Sub modelo informativo}{10}{section.3.1}% 
+\contentsline {subsubsection}{Sub modelo conunicacional}{10}{section.3.1}% 
+\contentsline {subsubsection}{Modelo funcional}{10}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}CMIS (Servicios de interopabilidad de gesti\IeC {\'o}n de contenidos)}{10}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.2}CMIS (Servicio de interoperabilidad de gesti\IeC {\'o}n de contenidos)}{11}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Sistema de gesti\IeC {\'o}n de contenidos o CMS}{11}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Objetivos}{12}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Historia}{12}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Definiciones}{12}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5} Enfoque de CMIS }{12}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.6}Alcances CMIS}{12}{subsection.3.2.6}% 
+\contentsline {subsection}{\numberline {3.2.7}CMIS}{12}{subsection.3.2.7}% 
+\contentsline {subsubsection}{Otros est\IeC {\'a}ndares}{12}{subsection.3.2.7}% 
+\contentsline {subsection}{\numberline {3.2.8}Funciones gen\IeC {\'e}ricas de CMIS}{13}{subsection.3.2.8}% 
+\contentsline {subsection}{\numberline {3.2.9}Object identity ODI}{13}{subsection.3.2.9}% 
+\contentsline {subsubsection}{Jerarqu\IeC {\'\i }a de documentos}{13}{subsection.3.2.9}% 
+\contentsline {subsection}{\numberline {3.2.10}CRUD}{13}{subsection.3.2.10}% 
+\contentsline {section}{\numberline {3.3}CMIP}{13}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Sistemas de administraci\IeC {\'o}n de red o NMS}{14}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Unidad de datos de protocolo de aplicaci\IeC {\'o}n}{14}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Caracteristicas del protocolo}{14}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Protocolos del CMIP}{14}{subsection.3.3.4}% 
+\contentsline {chapter}{\numberline {4}Configuraci\IeC {\'o}n b\IeC {\'a}sica de R1 y Routers}{15}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Conexiones a la interfaz de comandos}{15}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Acceso a la interfaz de comando CLI.}{15}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Modos de acceso}{15}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}USAMOS GNS3}{16}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Enrutamiento est\IeC {\'a}tico y din\IeC {\'a}mico}{19}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Protocolos CMIP}{19}{section.4.4}% 
+\contentsline {chapter}{\numberline {5}Enrutamiento est\IeC {\'a}tico y din\IeC {\'a}mico}{20}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Enrutamiento est\IeC {\'a}tico}{20}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Enrutamiento din\IeC {\'a}mico}{20}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Ventajas del enrutamiento est\IeC {\'a}tico}{20}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Desventajas del enrutamiento est\IeC {\'a}tico}{21}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Ventajas enrutamiento din\IeC {\'a}mico}{21}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Desventaja del enrutamiento din\IeC {\'a}mico }{21}{subsection.5.2.4}% 
+\contentsline {subsection}{\numberline {5.2.5}ENrutamiento est\IeC {\'a}tico}{21}{subsection.5.2.5}% 
+\contentsline {section}{\numberline {5.3}Protocolos}{22}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Protocolos enrutables}{22}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Protocolos no enrutables}{22}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}Protocolo de enrutamiento }{22}{subsection.5.3.3}% 
+\contentsline {subsubsection}{Objetivos}{22}{Item.65}% 
+\contentsline {section}{\numberline {5.4}Distancia administrativa }{23}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}COncepto de m\IeC {\'e}trica y sus componentes}{23}{section.5.5}% 
+\contentsline {subsection}{\numberline {5.5.1}Metr\IeC {\'\i }cas de enrutamiento}{24}{subsection.5.5.1}% 
+\contentsline {subsection}{\numberline {5.5.2}Clases de protocolos de enrutamiento}{24}{subsection.5.5.2}% 
+\contentsline {subsubsection}{Convergencia}{24}{subsection.5.5.2}% 
+\contentsline {section}{\numberline {5.6}Protocolos classful}{24}{section.5.6}% 
+\contentsline {section}{\numberline {5.7}Protocolos classless}{25}{section.5.7}% 
+\contentsline {section}{\numberline {5.8}Protocolos de enrutamiento interior}{25}{section.5.8}% 
+\contentsline {section}{\numberline {5.9}Principales tipos de enrutamiento}{25}{section.5.9}% 
+\contentsline {section}{\numberline {5.10}Ejemplo de configuraci\IeC {\'o}n RIPv2}{25}{section.5.10}% 
+\contentsline {subsection}{\numberline {5.10.1}Configuraci\IeC {\'o}n b\IeC {\'a}sica}{25}{subsection.5.10.1}% 
+\contentsline {section}{\numberline {5.11}Cuenta a infinito}{27}{section.5.11}% 
+\contentsline {chapter}{\numberline {6}Protocolo OSPF}{28}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Aspecto b\IeC {\'a}sico del protocolo OSPF}{28}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Caracter\IeC {\'\i }sticas}{28}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Observaciones al estado de enlace}{28}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Configuraci\IeC {\'o}n}{29}{subsection.6.2.2}% 
+\contentsline {section}{\numberline {6.3}Wildcard}{29}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}Bits de m\IeC {\'a}scara wildcard}{29}{subsection.6.3.1}% 
+\contentsline {section}{\numberline {6.4}Aspectos de configuraci\IeC {\'o}n}{30}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Nivel de administraci\IeC {\'o}n en OSI}{31}{chapter.7}% 
+\contentsline {section}{\numberline {7.1} Est\IeC {\'a}ndares }{31}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}Elementos de CMIS}{31}{subsection.7.1.1}% 
+\contentsline {section}{\numberline {7.2}Manager information base MIB}{31}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Almacenamiento de la informaci\IeC {\'o}n}{32}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}MIB, est\IeC {\'a}ndar ISO 10165-1 (x 720)}{32}{subsection.7.2.2}% 
+\contentsline {subsection}{\numberline {7.2.3}Estructura de la MIB }{32}{subsection.7.2.3}% 
+\contentsline {chapter}{\numberline {8}Funciones de gesti\IeC {\'o}n de sistemas }{33}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}\IeC {\'A}reas funcionales }{33}{section.8.1}% 
+\contentsline {subsection}{\numberline {8.1.1}Fallas}{33}{subsection.8.1.1}% 
+\contentsline {subsection}{\numberline {8.1.2}COnfiguraci\IeC {\'o}n}{33}{subsection.8.1.2}% 
+\contentsline {subsection}{\numberline {8.1.3}Contabilidad}{33}{subsection.8.1.3}% 
+\contentsline {subsection}{\numberline {8.1.4}Desempe\IeC {\~n}o}{34}{subsection.8.1.4}% 
+\contentsline {subsection}{\numberline {8.1.5}Seguridad}{34}{subsection.8.1.5}% 
+\contentsline {section}{\numberline {8.2}Acciones b\IeC {\'a}sicas }{34}{section.8.2}% 
+\contentsline {chapter}{\numberline {9}Gesti\IeC {\'o}n de fallas}{35}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}\IeC {\textquestiondown }Qu\IeC {\'e} implica administrar fallas?}{35}{section.9.1}% 
+\contentsline {chapter}{\numberline {10}EIGRP}{36}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Objetivos}{36}{section.10.1}% 
+\contentsline {section}{\numberline {10.2}Tiempo en hold }{37}{section.10.2}% 

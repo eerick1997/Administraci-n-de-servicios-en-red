@@ -62,3 +62,23 @@
 \BOOKMARK [1][-]{section.6.3}{Wildcard}{chapter.6}% 62
 \BOOKMARK [2][-]{subsection.6.3.1}{Bits de m\341scara wildcard}{section.6.3}% 63
 \BOOKMARK [1][-]{section.6.4}{Aspectos de configuraci\363n}{chapter.6}% 64
+\BOOKMARK [0][-]{chapter.7}{Nivel de administraci\363n en OSI}{}% 65
+\BOOKMARK [1][-]{section.7.1}{ Est\341ndares }{chapter.7}% 66
+\BOOKMARK [2][-]{subsection.7.1.1}{Elementos de CMIS}{section.7.1}% 67
+\BOOKMARK [1][-]{section.7.2}{Manager information base MIB}{chapter.7}% 68
+\BOOKMARK [2][-]{subsection.7.2.1}{Almacenamiento de la informaci\363n}{section.7.2}% 69
+\BOOKMARK [2][-]{subsection.7.2.2}{MIB, est\341ndar ISO 10165-1 \(x 720\)}{section.7.2}% 70
+\BOOKMARK [2][-]{subsection.7.2.3}{Estructura de la MIB }{section.7.2}% 71
+\BOOKMARK [0][-]{chapter.8}{Funciones de gesti\363n de sistemas }{}% 72
+\BOOKMARK [1][-]{section.8.1}{\301reas funcionales }{chapter.8}% 73
+\BOOKMARK [2][-]{subsection.8.1.1}{Fallas}{section.8.1}% 74
+\BOOKMARK [2][-]{subsection.8.1.2}{COnfiguraci\363n}{section.8.1}% 75
+\BOOKMARK [2][-]{subsection.8.1.3}{Contabilidad}{section.8.1}% 76
+\BOOKMARK [2][-]{subsection.8.1.4}{Desempe\361o}{section.8.1}% 77
+\BOOKMARK [2][-]{subsection.8.1.5}{Seguridad}{section.8.1}% 78
+\BOOKMARK [1][-]{section.8.2}{Acciones b\341sicas }{chapter.8}% 79
+\BOOKMARK [0][-]{chapter.9}{Gesti\363n de fallas}{}% 80
+\BOOKMARK [1][-]{section.9.1}{\277Qu\351 implica administrar fallas?}{chapter.9}% 81
+\BOOKMARK [0][-]{chapter.10}{EIGRP}{}% 82
+\BOOKMARK [1][-]{section.10.1}{Objetivos}{chapter.10}% 83
+\BOOKMARK [1][-]{section.10.2}{Tiempo en hold }{chapter.10}% 84

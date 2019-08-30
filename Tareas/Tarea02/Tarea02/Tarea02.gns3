@@ -111,6 +111,286 @@
                 "x": -550,
                 "y": 110,
                 "z": 1
+            },
+            {
+                "drawing_id": "b9820e7f-9dd0-43be-a5c8-3cab7151b207",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.0/24</text></svg>",
+                "x": -631,
+                "y": -262,
+                "z": 1
+            },
+            {
+                "drawing_id": "4a4d1bb0-b552-4c57-970b-b0fa6c5441e3",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"126\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.100.0/24</text></svg>",
+                "x": 552,
+                "y": -377,
+                "z": 1
+            },
+            {
+                "drawing_id": "20613ada-acbe-42c3-b18d-4a2dd235fc40",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"117\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.40.0/24</text></svg>",
+                "x": 561,
+                "y": 55,
+                "z": 1
+            },
+            {
+                "drawing_id": "bf9b6d2c-9aca-4df2-a80a-02721b9b2923",
+                "rotation": 0,
+                "svg": "<svg height=\"597\" width=\"420\"><rect fill=\"#ffffff\" fill-opacity=\"1.0\" height=\"597\" stroke=\"#000000\" stroke-width=\"2\" width=\"420\" /></svg>",
+                "x": -789,
+                "y": -229,
+                "z": -2
+            },
+            {
+                "drawing_id": "f749fc7b-c5aa-49fb-b35d-516c7df9c8e8",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"117\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.64/26</text></svg>",
+                "x": -634,
+                "y": -63,
+                "z": 1
+            },
+            {
+                "drawing_id": "3d7db2f2-7ec0-42b0-8465-fef1e73fa2b4",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"126\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.128/26</text></svg>",
+                "x": -637,
+                "y": 185,
+                "z": 1
+            },
+            {
+                "drawing_id": "7046106a-7b66-48d4-84c1-268af9889416",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.0/26</text></svg>",
+                "x": 47,
+                "y": -399,
+                "z": 1
+            },
+            {
+                "drawing_id": "eb00dd69-807e-418e-9a19-41b5b9b08c07",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.0/30</text></svg>",
+                "x": -237,
+                "y": -67,
+                "z": 1
+            },
+            {
+                "drawing_id": "325a9f2e-5fcc-4a5e-a79b-180084f377c2",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.4/30</text></svg>",
+                "x": -302,
+                "y": 127,
+                "z": 1
+            },
+            {
+                "drawing_id": "f4de914a-910b-4931-a0f8-ed3f160d6d54",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.8/30</text></svg>",
+                "x": -21,
+                "y": 233,
+                "z": 1
+            },
+            {
+                "drawing_id": "e6623178-2b70-46fd-b461-5a60bd820834",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"117\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.12/30</text></svg>",
+                "x": 27,
+                "y": -202,
+                "z": 1
+            },
+            {
+                "drawing_id": "8de2e013-254f-4a86-9b36-2000301d6b04",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"117\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.16/30</text></svg>",
+                "x": 55,
+                "y": 83,
+                "z": 1
+            },
+            {
+                "drawing_id": "d6545bc3-4890-4c68-8022-1d545d88be76",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"95\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.1.20</text></svg>",
+                "x": -72,
+                "y": 84,
+                "z": 1
+            },
+            {
+                "drawing_id": "33615e27-6c57-42e9-a3f1-34f4b0a766fa",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
+                "x": -278,
+                "y": -34,
+                "z": 1
+            },
+            {
+                "drawing_id": "4c42f8b7-cb78-4c2a-b1f2-2914f3948b4b",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
+                "x": -116,
+                "y": -160,
+                "z": 1
+            },
+            {
+                "drawing_id": "34d6fb19-f0b5-4f10-b640-e1f80ec4079c",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.13</text></svg>",
+                "x": -16,
+                "y": -203,
+                "z": 1
+            },
+            {
+                "drawing_id": "55fc10f5-d885-45e3-a969-e55e773aa86e",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.14</text></svg>",
+                "x": 154,
+                "y": -199,
+                "z": 1
+            },
+            {
+                "drawing_id": "dff8261e-6696-43e1-a3b2-0689062eb9fe",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.5</text></svg>",
+                "x": -240,
+                "y": 55,
+                "z": 1
+            },
+            {
+                "drawing_id": "15108056-c1f1-48f3-ab51-3cf74d382134",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.6</text></svg>",
+                "x": -192,
+                "y": 182,
+                "z": 1
+            },
+            {
+                "drawing_id": "5069e3ae-22d8-4054-a9e0-703377696ac0",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.9</text></svg>",
+                "x": -106,
+                "y": 267,
+                "z": 1
+            },
+            {
+                "drawing_id": "627b22bd-67a0-4c91-86db-c6c2859b5e6d",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.10</text></svg>",
+                "x": 96,
+                "y": 272,
+                "z": 1
+            },
+            {
+                "drawing_id": "27e8dc3e-a338-472a-bae5-ee1fb1ef6743",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.21</text></svg>",
+                "x": -123,
+                "y": 217,
+                "z": 1
+            },
+            {
+                "drawing_id": "b257d771-f213-4478-8e09-b435f8f3ce53",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.22</text></svg>",
+                "x": 195,
+                "y": -104,
+                "z": 1
+            },
+            {
+                "drawing_id": "c39cdf44-fea4-4a09-86a1-d89750c1ea24",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.17</text></svg>",
+                "x": 7,
+                "y": -106,
+                "z": 1
+            },
+            {
+                "drawing_id": "d70209cf-1900-41a6-83cf-7bfe5ff73c51",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.18</text></svg>",
+                "x": 202,
+                "y": 194,
+                "z": 1
+            },
+            {
+                "drawing_id": "008fc07f-4d5c-4bc5-b183-1f7aa94d79e5",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.65</text></svg>",
+                "x": -364,
+                "y": -10,
+                "z": 1
+            },
+            {
+                "drawing_id": "91e68e8e-d4e3-4a8d-bd1d-65ddba9f9098",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"31\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.66</text></svg>",
+                "x": -667,
+                "y": -18,
+                "z": 1
+            },
+            {
+                "drawing_id": "cd91b4cc-b10c-41c4-87ad-22babdbd63b8",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"40\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.129</text></svg>",
+                "x": -269,
+                "y": 227,
+                "z": 1
+            },
+            {
+                "drawing_id": "0163708d-7b0d-49df-82e2-7ba4d9e369e9",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"40\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.130</text></svg>",
+                "x": -663,
+                "y": 233,
+                "z": 1
+            },
+            {
+                "drawing_id": "8daebc24-6dd0-408a-948e-facf28f3aa38",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
+                "x": 261,
+                "y": -201,
+                "z": 1
+            },
+            {
+                "drawing_id": "2aaa768c-7109-428b-ada9-c73a19d00aa5",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
+                "x": 646,
+                "y": -259,
+                "z": 1
+            },
+            {
+                "drawing_id": "3a50f6fb-82ae-4d21-a204-1120a3563033",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.3</text></svg>",
+                "x": 651,
+                "y": -114,
+                "z": 1
+            },
+            {
+                "drawing_id": "9f2aaef7-bdd0-4b54-8a40-07dc9440686d",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
+                "x": 253,
+                "y": 224,
+                "z": 1
+            },
+            {
+                "drawing_id": "49394db4-8d06-4547-a529-b6eefbb8bb85",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
+                "x": 661,
+                "y": 153,
+                "z": 1
+            },
+            {
+                "drawing_id": "38497baf-5f05-4b4e-a643-5452d428a752",
+                "rotation": 0,
+                "svg": "<svg height=\"25\" width=\"21\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.3</text></svg>",
+                "x": 672,
+                "y": 301,
+                "z": 1
             }
         ],
         "links": [
@@ -631,7 +911,7 @@
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "auto_delete_disks": true,
+                    "auto_delete_disks": false,
                     "aux": null,
                     "chassis": "3640",
                     "clock_divisor": 4,
@@ -682,7 +962,7 @@
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "auto_delete_disks": true,
+                    "auto_delete_disks": false,
                     "aux": null,
                     "chassis": "3640",
                     "clock_divisor": 4,
@@ -733,7 +1013,7 @@
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "auto_delete_disks": true,
+                    "auto_delete_disks": false,
                     "aux": null,
                     "chassis": "3640",
                     "clock_divisor": 4,
@@ -784,7 +1064,7 @@
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "auto_delete_disks": true,
+                    "auto_delete_disks": false,
                     "aux": null,
                     "chassis": "3640",
                     "clock_divisor": 4,
@@ -835,7 +1115,7 @@
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "auto_delete_disks": true,
+                    "auto_delete_disks": false,
                     "aux": null,
                     "chassis": "3640",
                     "clock_divisor": 4,
@@ -876,11 +1156,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ethernetswitch-1",
-                    "x": -31,
+                    "text": "ESwitch-1",
+                    "x": -4,
                     "y": -25
                 },
-                "name": "Ethernetswitch-1",
+                "name": "ESwitch-1",
                 "node_id": "466b4877-ac8d-4c1e-ba2e-516976f274e5",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -952,11 +1232,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ethernetswitch-2",
-                    "x": -31,
+                    "text": "ESwitch-2",
+                    "x": -4,
                     "y": -25
                 },
-                "name": "Ethernetswitch-2",
+                "name": "ESwitch-2",
                 "node_id": "fbe36510-b1be-4197-9d45-d1720de9ced9",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -1028,11 +1308,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ethernetswitch-3",
-                    "x": -32,
-                    "y": -40
+                    "text": "ESwitch-3",
+                    "x": -4,
+                    "y": -25
                 },
-                "name": "Ethernetswitch-3",
+                "name": "ESwitch-3",
                 "node_id": "eed2981f-89a6-4f72-b847-b9d90f38d165",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -1104,11 +1384,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ethernetswitch-4",
-                    "x": -31,
+                    "text": "ESwitch-4",
+                    "x": -4,
                     "y": -25
                 },
-                "name": "Ethernetswitch-4",
+                "name": "ESwitch-4",
                 "node_id": "514c244e-256b-4121-9880-d44b98cc872b",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",

@@ -827,3 +827,146 @@ Ahora debemos de responder lo siguiente ¿Cómo definimos el router designado y 
 Un valor de prioridad puede variar de 0 a 255 \\
 
 Valor 0 de prioridad imposibilita al router que sea elegido DR \\
+
+\chapter{Nivel de administración en OSI}
+Una red tiene tres componentes básicos
+\begin{itemize}
+    \item Dispositivos administrados 
+    \item Agentes 
+    \item Sistemas administradores de la red
+\end{itemize}
+\section{ Estándares }
+\begin{itemize}
+    \item {CMIS: era la parte del protocolo encarga de dedefinir como se realiza la comunicación}
+    \item {CMIP: como se comunicaban los elementos de la red }
+\end{itemize}
+
+\subsection{Elementos de CMIS}
+\begin{itemize}
+    \item {APlicación de sistemas SMAP (gestiona la red)}
+    \item {Entidad de aplicación de gestión de sistemas (SMAE) esta del lado de los dispositivos se conecta con el SMAP para gestionar los dispositivos, esta gestión va desde la capa 1 hasta la capa 7.}
+    \item {Entidad de gestión de nivel LME }
+    \item {Base de información de gestión MIB }
+\end{itemize}
+
+\section{Manager information base MIB}
+\subsection{Almacenamiento de la información}
+
+\begin{itemize}
+    \item {En un agente el almacenamiento de la información se realiza en objetos, los cuales están definidos por:
+        \begin{enumerate}
+            \item {Atributos}
+            \item {Operaciones que realizan}
+            \item {Notifiaciones que pueden emitir}
+            \item {Interacción con otros objetos}
+        \end{enumerate}
+    }
+\end{itemize}
+
+La forma de representación y almacenamiento de los datos es un agente no se estandariza.
+Funciones locales utilizadas para convertir la información relacionada con los objetos gestionados a un formato que se pueda almacenar localmente .
+Una función específica se encarga de realizar las conversiones necesarias .
+La información se almacena en objetos.
+
+\subsection{MIB, estándar ISO 10165-1 (x 720)}
+Define como se debe realizar la gestión de la información 
+
+\subsection{Estructura de la MIB }
+La unidad básica de información es el objeto
+\begin{itemize}
+    \item {Atributos}
+    \item {Comportamientos}
+    \item {Notificaciones}
+\end{itemize}
+Existen dos formas de crear jerarquias para estructurar la MIB 
+\begin{itemize}
+    \item {Definición de subclases, o clases derivadas de otras clases que heredan sus características}
+    \item {Una instancia de objeto puede estar contenida en otra instancia de objeto}
+\end{itemize}
+
+\begin{longtable}[c]{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}l |}
+\hline
+{\color[HTML]{333333} SMAP}   & \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} }                                                 & {\color[HTML]{333333} SMAE}   \\ \cline{1-1} \cline{3-3} 
+{\color[HTML]{333333} Gestor} & \multirow{-2}{*}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} $\leftrightarrow$}} & {\color[HTML]{333333} Adente} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+\end{longtable}
+
+MIB no está diseñado para la administración de redes si no la administración de empresas.
+
+\chapter{Funciones de gestión de sistemas }
+Son las distintas áreas que tenemos que considerar para el funcionamiento de nuestra red, tenemos 
+\begin{itemize}
+    \item Gestión de fallas 
+    \item Gestión de costos
+    \item Gestión de configuración: actualizaciones, documentación, etc.
+    \item Gestión de prestaciones: que se le ofrece a los usuarios 
+    \item Gestión de seguridad
+\end{itemize}
+
+Todos los gestores mencionados tienen relación con más elementos.\\ 
+
+\section{Áreas funcionales }
+Se les conoce como FCAPS 
+\subsection{Fallas}
+Busca encontrar dónde ocurren los errores pero además de solucionarlos busca mecanismos para que las soluciones ocurran lo más rápido posible 
+\subsection{COnfiguración}
+BUsca una automatización de confiuraciones de red. 
+\subsection{Contabilidad}
+Uso de recursos de nuestros clientes 
+\subsection{Desempeño}
+Que tan eficiente es nuestra red, usa estadísticas, alarmas, etc.
+\subsection{Seguridad}
+Todo está conectado donde debe estar, se conecta quien debe ser, etc. 
+
+\section{Acciones básicas }
+Lectura(sondeo), Justificacion(trampa), escritura
+
+\chapter{Gestión de fallas}
+Tiene como objetivo registrar, detectar y contrarestar las condiciones de fallo de una red.
+
+\section{¿Qué implica administrar fallas?}
+\begin{itemize}
+    \item Identificación del prolblema
+    \item Crear, aprobar la solución y se propaga 
+    \item Resolución del problema y documentación
+\end{itemize}
+
+
+\chapter{EIGRP}
+Es una versión de IGRP mejorada por CISCO. 
+
+\section{Objetivos}
+\begin{itemize}
+    \item ¿Como está configurado? 
+    \item Historia 
+    \item Comandos báiscos 
+    \item Calcular la métrica compuesta por EIGRP 
+    \item Describir los conceptos y el funcionamiento de DUAL 
+    \item Describir los usos de los comoandos adicionales de EIGRP
+\end{itemize}
+
+Tiene una característica importante, nos permite trabajar de distintas formas, permite trabajar con el protocolo DUAL o vector distancia o bien estado de enlace. También permite configurar las prioridades dependiendo de la fuente de información. 
+
+En la capa de transporte usa el protocolo RTP. Tiene ciertas catracterísticas especiales 
+\begin{itemize}
+    \item {Soporta envios confiables y no confiables dependiendo de las necesidades}
+    \item {Soporte para unicast o multicast}
+\end{itemize}
+
+También tiene 5 tipos de paquetes 
+\begin{itemize}
+    \item Saludo: permite detectar routers vecinos para establecer adyacencias e informar que estamos activos
+    \item Actualización 
+    \item Reconocimiento (En respuesta a una actualizacion)
+    \item Consulta 
+    \item Respuesta a la consulta
+\end{itemize}
+
+\section{Tiempo en hold }
+Tiempo en espera que un router maneja antes de recibir un mensaje de saludo. Si en cierto tiempo no se recibe un mensaje de saludo se entiende como que el router tiene problemas y lo marca. Si se rebasa un segundo tiempo de espera se da por hecho que el router está inactivo y se elige otro router por el cual pasar.    
