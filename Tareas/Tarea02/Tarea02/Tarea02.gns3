@@ -706,68 +706,6 @@
             },
             {
                 "filters": {},
-                "link_id": "1052b0f9-57cc-46ae-b567-d0e787ebdd77",
-                "nodes": [
-                    {
-                        "adapter_number": 1,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f1/0",
-                            "x": -20,
-                            "y": -41
-                        },
-                        "node_id": "2c40718f-e0ce-4b62-96a9-9c04bf060bcb",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 2,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f2/0",
-                            "x": 45,
-                            "y": 62
-                        },
-                        "node_id": "bc637b3c-7716-4d61-97ed-3678773d1749",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
-                "link_id": "3bded8ac-f46b-46e4-ace9-de21098b1305",
-                "nodes": [
-                    {
-                        "adapter_number": 2,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f2/0",
-                            "x": 59,
-                            "y": -21
-                        },
-                        "node_id": "548839e4-baf9-4add-9651-8689d9a95174",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 1,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f1/0",
-                            "x": -32,
-                            "y": 55
-                        },
-                        "node_id": "61833245-0151-41a2-970e-203789fbbaf6",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "285e3993-826d-487f-a27c-27ae894289a7",
                 "nodes": [
                     {

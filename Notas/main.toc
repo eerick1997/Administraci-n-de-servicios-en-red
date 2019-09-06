@@ -96,3 +96,17 @@
 \contentsline {chapter}{\numberline {10}EIGRP}{36}{chapter.10}% 
 \contentsline {section}{\numberline {10.1}Objetivos}{36}{section.10.1}% 
 \contentsline {section}{\numberline {10.2}Tiempo en hold }{37}{section.10.2}% 
+\contentsline {chapter}{\numberline {11}Implementaci\IeC {\'o}n de VLAN's y troncales}{38}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}Agrupando funciones del negocio dentro de VLANs}{38}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}Describiendo tecnolog\IeC {\'\i }as de interconexi\IeC {\'o}n}{39}{subsection.11.1.1}% 
+\contentsline {subsection}{\numberline {11.1.2}Determinando el equipo y el cableado a necesitar}{39}{subsection.11.1.2}% 
+\contentsline {section}{\numberline {11.2}Enlace troncal}{39}{section.11.2}% 
+\contentsline {subsection}{\numberline {11.2.1}Explicando enlaces troncales}{39}{subsection.11.2.1}% 
+\contentsline {section}{\numberline {11.3}Rangos de VLANs}{40}{section.11.3}% 
+\contentsline {section}{\numberline {11.4}VTP}{41}{section.11.4}% 
+\contentsline {section}{\numberline {11.5}Modos de VTP}{41}{section.11.5}% 
+\contentsline {subsection}{\numberline {11.5.1}Servidor}{41}{subsection.11.5.1}% 
+\contentsline {subsection}{\numberline {11.5.2}Client}{41}{subsection.11.5.2}% 
+\contentsline {subsection}{\numberline {11.5.3}Transparent}{42}{subsection.11.5.3}% 
+\contentsline {section}{\numberline {11.6}Describiendo la operaci\IeC {\'o}n de VTP}{42}{section.11.6}% 
+\contentsline {section}{\numberline {11.7}VTP pruning}{42}{section.11.7}% 

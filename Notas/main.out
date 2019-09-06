@@ -82,3 +82,17 @@
 \BOOKMARK [0][-]{chapter.10}{EIGRP}{}% 82
 \BOOKMARK [1][-]{section.10.1}{Objetivos}{chapter.10}% 83
 \BOOKMARK [1][-]{section.10.2}{Tiempo en hold }{chapter.10}% 84
+\BOOKMARK [0][-]{chapter.11}{Implementaci\363n de VLAN's y troncales}{}% 85
+\BOOKMARK [1][-]{section.11.1}{Agrupando funciones del negocio dentro de VLANs}{chapter.11}% 86
+\BOOKMARK [2][-]{subsection.11.1.1}{Describiendo tecnolog\355as de interconexi\363n}{section.11.1}% 87
+\BOOKMARK [2][-]{subsection.11.1.2}{Determinando el equipo y el cableado a necesitar}{section.11.1}% 88
+\BOOKMARK [1][-]{section.11.2}{Enlace troncal}{chapter.11}% 89
+\BOOKMARK [2][-]{subsection.11.2.1}{Explicando enlaces troncales}{section.11.2}% 90
+\BOOKMARK [1][-]{section.11.3}{Rangos de VLANs}{chapter.11}% 91
+\BOOKMARK [1][-]{section.11.4}{VTP}{chapter.11}% 92
+\BOOKMARK [1][-]{section.11.5}{Modos de VTP}{chapter.11}% 93
+\BOOKMARK [2][-]{subsection.11.5.1}{Servidor}{section.11.5}% 94
+\BOOKMARK [2][-]{subsection.11.5.2}{Client}{section.11.5}% 95
+\BOOKMARK [2][-]{subsection.11.5.3}{Transparent}{section.11.5}% 96
+\BOOKMARK [1][-]{section.11.6}{Describiendo la operaci\363n de VTP}{chapter.11}% 97
+\BOOKMARK [1][-]{section.11.7}{VTP pruning}{chapter.11}% 98

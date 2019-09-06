@@ -970,3 +970,193 @@ También tiene 5 tipos de paquetes
 
 \section{Tiempo en hold }
 Tiempo en espera que un router maneja antes de recibir un mensaje de saludo. Si en cierto tiempo no se recibe un mensaje de saludo se entiende como que el router tiene problemas y lo marca. Si se rebasa un segundo tiempo de espera se da por hecho que el router está inactivo y se elige otro router por el cual pasar.    
+
+
+\chapter{Implementación de VLAN's y troncales}
+Al tener un primer diseño de una red es común no pensar que nuestra red puede crecer, debemos considerar varias cosas al realizar el diseño de una red. 
+Aquí tenemos una pequeña lista de errores comunes en las redes.
+\begin{itemize}
+    \item Dominios de falla; Es más probable que ocurra alguna situación si perdemos una sección perdemos varias LANS 
+    \item Dominios de broadcast
+    \item Gran cantidad de trfico unicast con MACs desconocidas
+    \item Trafico multicast en puertos donde no se requiere 
+    \item Dificultad en el manejo y soporte
+    \item Posibles vulnerabilidades de seguridad
+\end{itemize}
+
+\section{Agrupando funciones del negocio dentro de VLANs}
+Las VLANs nos permiten una separación lógica de las LAN aún que estas no se encuentren físicamente contiguas. 
+
+\begin{itemize}
+    \item {Direccionamiento jerárquico de red significa que un número de red es asignado a una VLAN}
+    \item {Beneficios: 
+        \begin{enumerate}
+            \item {Fácil mantenimiento y resolución de}
+            \item {Errores minimizados}
+            \item {Tablas de enrutamiento reducumas}
+        \end{enumerate}}
+\end{itemize}
+
+\subsection{Describiendo tecnologías de interconexión}
+Cuando estemos en secciones donde hay una concentración de envíos de paquetes debemos utilizar tecnologías de mayor ancho de banda, a continuación se muestra un listado de tecnologías que son posibles utilizar, desde la que debe ser utilizada desde abajo hacía arriba.
+\begin{itemize}
+    \item Fast ethernet
+    \item Gigabit ethernet
+    \item 10-gigabit ethernet
+    \item EtherChannel
+\end{itemize}
+
+\subsection{Determinando el equipo y el cableado a necesitar}
+Los cuatro objetivos en el diseño de una red de alto desempeño son
+\begin{itemize}
+    \item Seguridad: la información de un departamento no sale d euna sección 
+    \item Disponibilidad 
+    \item Escalabilidad 
+    \item Manejabilidad
+\end{itemize}
+
+\section{Enlace troncal}
+Es un enlace de nuestra red donde circulan tramas de distintas VLANs.
+
+\begin{itemize}
+    \item {Un enlace troncal se puede comprarar con las carreteras d euna autopista}
+    \item {Las carreteras que tienen distintos puntos d einicio y fin que comparten una autopista principal durante algunos kilimetros, luego se vuelven a dividir par allegar a destinos diferentes}
+    \item {Este método es considerablemente económico}
+\end{itemize}
+
+EN resumen es un enlace punto a punto que soporta varias VLANs y nos permite el ahorro entre distintos puertos.
+
+\subsection{Explicando enlaces troncales}
+
+Hay dos tecnologías principales 
+\begin{itemize}
+    \item {ISL (CISCO)
+        \begin{itemize}
+            \item Soporta multiples protocoloas de capa 2 (Ethernet, Token Ring, FDDI y ATM)
+            \item Soporta PVST 
+            \item No usa VLAN nativa, solo encapsula cda trama 
+            \item El proceso de encapsulación deja las tramas originales sin modificación
+        \end{itemize}}
+    \item {802.1Q (IEEEE standard trunking protocol)
+        \begin{itemize}
+            \item Permite la transmisión en un enlace físico troncal 
+            \item Permite ethernet y token ring 
+            \item Sporta hasta 5096 VLANs
+            \item Soporta STP, RSTP 
+            \item Soporta topologías punto a multipunto 
+            \item Facilita el tráfico 
+            \item Soporta QoS (Quality of service )
+        \end{itemize}}
+\end{itemize}
+
+Estos dos protocolos son necesarios para cuando se necesite interconectar 
+\begin{itemize}
+    \item Dos switch 
+    \item Switch y router 
+    \item Switch y tarjeta nick
+\end{itemize}
+Asignamos el modo trunk a un puerto
+\begin{lstlisting}
+    Switch(config)#interface [Interfaz]
+    Switch(config-if)#switchport mode trunk    
+\end{lstlisting}
+
+Configuración del router para VLAN 
+\begin{lstlisting}
+    Router>en 
+    Router#configure t 
+    Router(config)#interface fastEthernet 0/0
+    Router(config-if)#no shutdown 
+    Router(config-if)#interface fastEthernet 0/0.1 
+    Router(config-subif)#encapsulation dot1Q [Número de la VLAN]
+    Router(config-subif)#ip address [IP] [Mascara]
+\end{lstlisting}
+
+\section{Rangos de VLANs}
+Cada VLAN en la red debe tener un VID único  \break 
+
+El rango válido configurable por el usuario es 
+\begin{itemize}
+    \item VLAN ISL de 1 a 1024
+    \item -----
+\end{itemize}
+
+Hay algunas VLANs reservadas
+
+\begin{longtable}[c]{|l|l|l|l|}
+    \hline
+    \rowcolor[HTML]{00009B} 
+    {\color[HTML]{FFFFFF} VLAN ranges} & {\color[HTML]{FFFFFF} Range}     & {\color[HTML]{FFFFFF} Use}                                                                                         & {\color[HTML]{FFFFFF} VTP propagated} \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    \rowcolor[HTML]{FFFFFF} 
+    {\color[HTML]{333333} 0, 4096}     & {\color[HTML]{333333} reservado} & {\color[HTML]{333333} Uso del sistema. VLANs no vistas o usadas}                                                   & -                                     \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    1                                  & Normal                           & \begin{tabular}[c]{@{}l@{}}VLAN por defecto. Esta VLAN puede ser\\ usada pero no borrada o modificada\end{tabular} & Si                                    \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    2-1001                             & Normal                           & Pueden ser creadas, usadas y borradas                                                                              & Si                                    \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    1002-1005                          & Normal                           & \begin{tabular}[c]{@{}l@{}}VLANs por defecto para FDDI y \\ Token Ring estas no pueden ser borradas\end{tabular}   & Si                                    \\ \hline
+    \rowcolor[HTML]{FFFFFF} 
+    1006-4094                          & Extendido                        & Solo para VLANs Ethernet                                                                                           & No                                    \\ \hline
+\end{longtable}
+
+\section{VTP}
+Es un protocolo de capa 2. Mantiene las configuraciones de la VLAN consistentes, permite borrar, cambiar, agregar los nombres de la VLAN en todos los switches del dominio VTP\break
+
+Características
+\begin{itemize}
+    \item Protocolo de cisco 
+    \item Anuncia VLANs de la 1 a la 1005 solamente 
+    \item Actualziaciones e intercambio através de solo enlaces troncales 
+\end{itemize}
+
+Permite compatibilidad y hay versiones de 1 a 5\break 
+
+\section{Modos de VTP}
+\subsection{Servidor}
+\begin{itemize}
+    \item Crea, modifica y borra VLANs
+    \item Manda y envía avisos
+    \item Sincroniza configuraciones de VLANs 
+    \item Graba la configuración en NVRAM
+\end{itemize}
+
+\subsection{Client}
+\begin{itemize}
+    \item No puede crear, cambiar o borrar VLANs
+    \item Re-envia los avisos 
+    \item Sincroniza configuraciones de VLANs 
+    \item No graba a NVRAM
+\end{itemize}
+
+\subsection{Transparent}
+\begin{itemize}
+    \item Crea, modifica y borra VLANS 
+    \item Re-envía avisos 
+    \item No sincroniza configuraciones de VLANs
+    \item Graba la configuración a NVRAM
+\end{itemize}
+
+\section{Describiendo la operación de VTP}
+\begin{itemize}
+    \item {Administrador crea una VLAN}
+    \item {Revisión 3 se actualiza a versión 4}
+    \item {VTP propaga revisión 4}
+    \item {Revisión 3 actualiza a 4}
+    \item {VRP sincroniza y re-envía la información}
+\end{itemize}
+
+\section{VTP pruning}
+
+\begin{itemize}
+    \item VTP pruning usa los avisos de VLAN para determinar cuando una conexión troncal está mandando tráfico innecesario 
+    \item VTP pruning incrementa el ancho de banda restringindo el flujo de tráfico en enlaces troncales dónde no se necesita
+    \item {Restricciones:
+        \begin{enumerate}
+            \item En la VLAN 1 no se puede activar esta opción 
+            \item Sólo se puede implementar VTP pruning solo en los servidores de VTP
+        \end{enumerate}}
+\end{itemize}
