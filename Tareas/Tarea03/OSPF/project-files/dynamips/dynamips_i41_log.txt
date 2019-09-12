@@ -1,0 +1,12 @@
+Sep 10 19:27:40.306 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Sep 10 19:27:40.306 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40725.
+Sep 10 19:27:40.314 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 10 19:27:40.314 HYPERVISOR: exec_cmd: hypervisor working_dir /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips 
+Sep 10 19:27:40.314 GENERAL: working_dir=/home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips
+Sep 10 19:27:40.314 HYPERVISOR: exec_cmd: ethsw create ESwitch-2 
+Sep 10 19:27:41.693 HYPERVISOR: exec_cmd: nio create_udp udp-dd73c7ae-0af2-48a2-b73c-3a183333a77c 10111 127.0.0.1 10110 
+Sep 10 19:27:41.694 HYPERVISOR: exec_cmd: ethsw add_nio ESwitch-2 udp-dd73c7ae-0af2-48a2-b73c-3a183333a77c 
+Sep 10 19:27:41.710 HYPERVISOR: exec_cmd: ethsw set_access_port ESwitch-2 udp-dd73c7ae-0af2-48a2-b73c-3a183333a77c 1 
+Sep 10 19:27:42.114 HYPERVISOR: exec_cmd: nio create_udp udp-b98cfcb9-e612-4259-93b7-a0910a818b2d 10124 127.0.0.1 10125 
+Sep 10 19:27:42.115 HYPERVISOR: exec_cmd: ethsw add_nio ESwitch-2 udp-b98cfcb9-e612-4259-93b7-a0910a818b2d 
+Sep 10 19:27:42.133 HYPERVISOR: exec_cmd: ethsw set_access_port ESwitch-2 udp-b98cfcb9-e612-4259-93b7-a0910a818b2d 1 

@@ -1,0 +1,52 @@
+Sep 10 19:27:40.150 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Sep 10 19:27:40.150 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37865.
+Sep 10 19:27:40.162 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 10 19:27:40.162 HYPERVISOR: exec_cmd: hypervisor working_dir /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips 
+Sep 10 19:27:40.162 GENERAL: working_dir=/home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips
+Sep 10 19:27:40.162 HYPERVISOR: exec_cmd: hypervisor working_dir /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/2267492e-92df-4b26-a5d2-442ddb8af5c8 
+Sep 10 19:27:40.162 GENERAL: working_dir=/home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/2267492e-92df-4b26-a5d2-442ddb8af5c8
+Sep 10 19:27:40.162 HYPERVISOR: exec_cmd: vm create R3 3 c3600 
+Sep 10 19:27:40.162 VM: VM R3 created.
+Sep 10 19:27:40.163 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5034 
+Sep 10 19:27:40.163 HYPERVISOR: exec_cmd: c3600 get_mac_addr R3 
+Sep 10 19:27:40.163 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:40.163 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6050b114 
+Sep 10 19:27:40.164 HYPERVISOR: exec_cmd: vm set_ios R3 /home/erick/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Sep 10 19:27:40.164 HYPERVISOR: exec_cmd: c3600 set_mac_addr R3 cc03.7796.0000 
+Sep 10 19:27:40.165 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Sep 10 19:27:40.165 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Sep 10 19:27:40.165 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:40.165 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 NM-1FE-TX 
+Sep 10 19:27:40.166 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:40.166 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Sep 10 19:27:40.166 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:40.166 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-1FE-TX 
+Sep 10 19:27:40.166 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:40.167 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 NM-1FE-TX 
+Sep 10 19:27:40.167 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5034 
+Sep 10 19:27:41.112 HYPERVISOR: exec_cmd: nio create_udp udp-2e9e4d6b-5864-4a4d-9aa5-d2241fc574d7 10098 127.0.0.1 10099 
+Sep 10 19:27:41.325 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-2e9e4d6b-5864-4a4d-9aa5-d2241fc574d7 
+Sep 10 19:27:41.325 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:41.371 HYPERVISOR: exec_cmd: nio create_udp udp-3fc5a145-d00c-42c8-ae38-02d52e43b8ed 10102 127.0.0.1 10103 
+Sep 10 19:27:41.372 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-3fc5a145-d00c-42c8-ae38-02d52e43b8ed 
+Sep 10 19:27:41.372 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:52.566 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Sep 10 19:27:52.566 VM: VM Ghost created.
+Sep 10 19:27:52.571 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/erick/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Sep 10 19:27:52.573 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 10 19:27:52.574 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/c3640-a3js-mz.124-25d.image-192.ghost 
+Sep 10 19:27:52.575 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Sep 10 19:27:52.576 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 10 19:27:52.577 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Sep 10 19:27:52.577 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 10 19:27:52.992 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 10 19:27:52.993 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 10 19:27:53.226 VM: VM Ghost shutdown.
+Sep 10 19:27:53.228 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 10 19:27:53.232 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 10 19:27:53.232 VM: VM Ghost destroyed.
+Sep 10 19:27:53.237 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Sep 10 19:27:53.238 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/c3640-a3js-mz.124-25d.image-192.ghost 
+Sep 10 19:27:53.240 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 10 19:27:53.244 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Sep 10 19:27:53.246 HYPERVISOR: exec_cmd: vm start R3 

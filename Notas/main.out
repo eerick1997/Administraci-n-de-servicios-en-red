@@ -96,3 +96,9 @@
 \BOOKMARK [2][-]{subsection.11.5.3}{Transparent}{section.11.5}% 96
 \BOOKMARK [1][-]{section.11.6}{Describiendo la operaci\363n de VTP}{chapter.11}% 97
 \BOOKMARK [1][-]{section.11.7}{VTP pruning}{chapter.11}% 98
+\BOOKMARK [1][-]{section.11.8}{Actividad}{chapter.11}% 99
+\BOOKMARK [0][-]{chapter.12}{Etherchannel}{}% 100
+\BOOKMARK [1][-]{section.12.1}{Compatibilidad}{chapter.12}% 101
+\BOOKMARK [2][-]{subsection.12.1.1}{PAgp, Port aggregation Protocol}{section.12.1}% 102
+\BOOKMARK [1][-]{section.12.2}{Configuraci\363n}{chapter.12}% 103
+\BOOKMARK [0][-]{chapter.13}{Protocolo spanning tree}{}% 104

@@ -1,0 +1,40 @@
+Sep 10 19:27:40.186 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Sep 10 19:27:40.186 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36177.
+Sep 10 19:27:40.197 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 10 19:27:40.198 HYPERVISOR: exec_cmd: hypervisor working_dir /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips 
+Sep 10 19:27:40.198 GENERAL: working_dir=/home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips
+Sep 10 19:27:40.199 HYPERVISOR: exec_cmd: hypervisor working_dir /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/79aa1ca5-52dc-41f1-b504-6b76995b7cbd 
+Sep 10 19:27:40.199 GENERAL: working_dir=/home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/79aa1ca5-52dc-41f1-b504-6b76995b7cbd
+Sep 10 19:27:40.200 HYPERVISOR: exec_cmd: vm create R4 4 c3600 
+Sep 10 19:27:40.200 VM: VM R4 created.
+Sep 10 19:27:40.201 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5035 
+Sep 10 19:27:40.201 HYPERVISOR: exec_cmd: c3600 get_mac_addr R4 
+Sep 10 19:27:40.202 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:40.203 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x6050b114 
+Sep 10 19:27:40.205 HYPERVISOR: exec_cmd: vm set_ios R4 /home/erick/GNS3/images/IOS/c3640-a3js-mz.124-25d.image 
+Sep 10 19:27:40.206 HYPERVISOR: exec_cmd: c3600 set_mac_addr R4 cc04.77a7.0000 
+Sep 10 19:27:40.207 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Sep 10 19:27:40.208 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Sep 10 19:27:40.209 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:40.210 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 NM-1FE-TX 
+Sep 10 19:27:40.210 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:40.211 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Sep 10 19:27:40.212 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:40.212 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Sep 10 19:27:40.213 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:40.214 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 NM-1FE-TX 
+Sep 10 19:27:40.216 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5035 
+Sep 10 19:27:41.379 HYPERVISOR: exec_cmd: nio create_udp udp-bddd7c12-7cf5-4b1f-9994-8e66b5cffc61 10104 127.0.0.1 10105 
+Sep 10 19:27:41.592 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-bddd7c12-7cf5-4b1f-9994-8e66b5cffc61 
+Sep 10 19:27:41.593 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:41.746 HYPERVISOR: exec_cmd: nio create_udp udp-b01505cd-ba24-4a73-b1c6-b89f6e3ab8ea 10116 127.0.0.1 10117 
+Sep 10 19:27:41.747 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-b01505cd-ba24-4a73-b1c6-b89f6e3ab8ea 
+Sep 10 19:27:41.747 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:41.832 HYPERVISOR: exec_cmd: nio create_udp udp-42db327e-515d-45fd-a7c3-9a3b1148fde9 10120 127.0.0.1 10121 
+Sep 10 19:27:41.833 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 2 0 udp-42db327e-515d-45fd-a7c3-9a3b1148fde9 
+Sep 10 19:27:41.834 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:53.472 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Sep 10 19:27:53.472 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/erick/Documentos/GitHub/RedesIII/Tareas/Tarea03/OSPF/project-files/dynamips/c3640-a3js-mz.124-25d.image-192.ghost 
+Sep 10 19:27:53.472 HYPERVISOR: exec_cmd: vm get_status R4 
+Sep 10 19:27:53.473 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Sep 10 19:27:53.473 HYPERVISOR: exec_cmd: vm start R4 
