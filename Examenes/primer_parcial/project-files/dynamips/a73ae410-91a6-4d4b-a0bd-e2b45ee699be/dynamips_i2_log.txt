@@ -1,0 +1,16 @@
+Sep 12 13:42:14.568 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Sep 12 13:42:14.568 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45777.
+Sep 12 13:42:14.577 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 12 13:42:14.577 HYPERVISOR: exec_cmd: hypervisor working_dir /home/erick/Documentos/GitHub/RedesIII/Examenes/primer_parcial/project-files/dynamips 
+Sep 12 13:42:14.577 GENERAL: working_dir=/home/erick/Documentos/GitHub/RedesIII/Examenes/primer_parcial/project-files/dynamips
+Sep 12 13:42:14.577 HYPERVISOR: exec_cmd: ethsw create SW11 
+Sep 12 13:42:15.240 HYPERVISOR: exec_cmd: nio create_udp udp-354f8a30-7737-4b9c-8942-2e3c8f4d14c5 10002 127.0.0.1 10003 
+Sep 12 13:42:15.240 HYPERVISOR: exec_cmd: ethsw add_nio SW11 udp-354f8a30-7737-4b9c-8942-2e3c8f4d14c5 
+Sep 12 13:42:15.251 HYPERVISOR: exec_cmd: ethsw set_access_port SW11 udp-354f8a30-7737-4b9c-8942-2e3c8f4d14c5 1 
+Sep 12 13:42:17.728 HYPERVISOR: exec_cmd: nio create_udp udp-1f6bf95d-d31e-41a5-a247-987b5bc44873 10061 127.0.0.1 10060 
+Sep 12 13:42:17.728 HYPERVISOR: exec_cmd: ethsw add_nio SW11 udp-1f6bf95d-d31e-41a5-a247-987b5bc44873 
+Sep 12 13:42:17.743 HYPERVISOR: exec_cmd: ethsw set_access_port SW11 udp-1f6bf95d-d31e-41a5-a247-987b5bc44873 1 
+Sep 14 00:01:45.332 HYPERVISOR: exec_cmd: ethsw delete SW11 
+Sep 14 00:01:45.366 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 14 00:01:45.432 HYPERVISOR: Stopped.
+Sep 14 00:01:45.432 GENERAL: reset done.

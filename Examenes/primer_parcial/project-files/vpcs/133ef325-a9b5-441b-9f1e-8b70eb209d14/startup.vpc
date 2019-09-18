@@ -1,9 +1,1 @@
-# This the configuration for PC-oficinas
-#
-# Uncomment the following line to enable DHCP
-# dhcp
-# or the line below to manually setup an IP address and subnet mask
-# ip 192.168.1.1 255.0.0.0
-#
-
-set pcname PC-oficinas
+ip 200.200.200.218 200.200.200.217 29
